@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChildMath.Views.ChooseQuestionType" BackgroundImage="bck.jpg" >
+    <ContentPage.Content>
+        <AbsoluteLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+           
+            <StackLayout>
+            <Grid   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                         
+                    </Grid.RowDefinitions>
+                        <Label TextColor="Black" FontAttributes="Bold" Text="Toplama"  FontSize="22" Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Switch  x:Name="swaddition" Grid.Column="1" Grid.Row="0" IsToggled="True"  HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                        <Label TextColor="Black"  FontAttributes="Bold" Text="Çıxma" FontSize="22" Grid.Column="0" Grid.Row="1"  HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Switch  x:Name="swSubtraction" Grid.Column="1" Grid.Row="1" IsToggled="True" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                        <Label TextColor="Black" FontAttributes="Bold" Text="Vurma" FontSize="22" Grid.Column="0" Grid.Row="2"  HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Switch   x:Name="swMultiplication" Grid.Column="1" Grid.Row="2"  HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                        <Label TextColor="Black"  FontAttributes="Bold" Text="Bölmə" FontSize="22" Grid.Column="0" Grid.Row="3"  HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Switch  x:Name="swDivision" Grid.Column="1" Grid.Row="3" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                        <Label TextColor="Black" FontAttributes="Bold" Text="Sual sayı" FontSize="22" Grid.Column="0" Grid.Row="4"  HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Picker x:Name="pcQuestionCount"  FontAttributes="Bold"  HorizontalOptions="Start" WidthRequest="150" VerticalOptions="Center" Grid.Column="1" Grid.Row="4">
+                            <Picker.Items>
+                                <x:String>10</x:String>
+                                <x:String>20</x:String>
+                                <x:String>30</x:String>
+                                <x:String>40</x:String>
+                                <x:String>50</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Label  TextColor="Black"  FontAttributes="Bold" Text="Mərtəbə sayı" FontSize="22" Grid.Column="0" Grid.Row="5"  HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Picker x:Name="pcFloor" FontAttributes="Bold"   HorizontalOptions="Start"  WidthRequest="150" VerticalOptions="Center" Grid.Column="1" Grid.Row="5" >
+                            <Picker.Items>
+                                <x:String>Bir rəqəmli ədədlər</x:String>
+                                <x:String>İki rəqəmli ədədlər</x:String>
+                                <x:String>Üç rəqəmli ədədlər</x:String>
+                        </Picker.Items>
+                        </Picker>
+
+                        <Button x:Name="btnStart" Text="Başla" Grid.RowSpan="2" Grid.Column="2" Grid.Row="2" WidthRequest="150" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Center" Clicked="btnStart_Clicked" />
+
+                    </Grid>
+            </StackLayout>
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

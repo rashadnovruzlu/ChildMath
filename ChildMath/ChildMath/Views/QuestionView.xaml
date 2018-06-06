@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChildMath.Views.QuestionView" BackgroundImage="question.jpg">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+           
+
+            <StackLayout x:Name="skQuestion">
+
+                <Grid  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="lblNumber1" FontFamily="sans-serif" TextColor="Black" FontAttributes="Italic"  FontSize="50" Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Label x:Name="lblSymbols" FontFamily="sans-serif" TextColor="Black" FontAttributes="Italic"  FontSize="50" Grid.Column="1" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Label x:Name="lblNumber2" FontFamily="sans-serif" TextColor="Black" FontAttributes="Italic"  FontSize="50" Grid.Column="2" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                    <Label x:Name="lblAnswer" FontFamily="sans-serif" Text=" = ? "  TextColor="Green" FontAttributes="Italic"  FontSize="50" Grid.Column="3"   Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                    <Button x:Name="btnNext" Grid.ColumnSpan="4" BackgroundColor="Green" TextColor="White" Text="Cavab" Grid.Column="0" Grid.Row="1" WidthRequest="120" HeightRequest="40" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnNext_ClickedAsync" />
+
+                </Grid>
+            </StackLayout>
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
